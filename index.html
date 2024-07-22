@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스쿱스</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="./img/favicon.png">
+
+</head>
+<body>
+    <div id="wrap">
+
+        <div id="blink" class="scr1"></div>
+
+        <!-- 플로팅 메뉴 -->
+        <div class="ham">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <ul id="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../00_Menu_KDK/index.html">Menu</a></li>
+                    <li><a href="../00_Notice_PJH/sub_member.html">Notice</a></li>
+                    <li><a href="../00_Story_KYE/story.html">Story</a></li>
+                    <li><a href="../00_Member_HMS/member.html">Member</a></li>
+                </ul>
+            </div>
+        </div><!--.ham-->
+        <div class="nav_item">
+            <ul>
+                <li class="up"><a href="javascript:;"><i class="fa-solid fa-chevron-up"></i></a></li>
+                <li class="down"><a href="javascript:;"><i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+        </div><!--.nav_item-->
+
+
+
+        <!-- fixnav, 픽스네비 -->
+        <div class="fixnav">
+            <div class="fix_logo"><a href="../index.html">Scoops</a></div>
+            <ul class="clearfix">
+                <li><a href="../00_Menu_KDK/index.html">Menu</a></li>
+                <li><a href="../00_Notice_PJH/sub_member.html">Notice</a></li>
+                <li><a href="../00_Story_KYE/story.html">Story</a></li>
+                <li><a href="../00_Member_HMS/member.html">Member</a></li>
+            </ul>
+            <!-- 검색창 -->
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button class="sb"><a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+            </div>
+            <a href="https://open.kakao.com/o/sXKRcZvg" target="_blank"><i
+                    class="kakaotalk fa-solid fa-comment"></i></a>
+            <a href="javascript:;"><i class="mypage fa-solid fa-user"></i></a>
+        </div><!--.fixnav-->
+
+
+
+        <!-- #header -->
+        <div id="header">
+            <div class="container">
+                <div class="header">
+                    <p>웹퍼블리셔팀 <br><em>2^10</em></p>
+                </div>
+            </div><!-- //.container -->
+        </div><!-- //header -->
+
+
+
+        <!-- #banner -->
+        <div id="banner">
+            <div class="container">
+                <div class="tlogo tlogo_2">
+                    <img src="./img/tlogo_2.png" alt="팀로고_2">
+                </div>
+                <div class="tlogo tlogo_10">
+                    <img src="./img/tlogo_10.png" alt="팀로고_10">
+                </div>
+                <div class="banner">
+                    <img class=banimg src="./img/sub_banner1.png" alt="서브페이지_멤버_배너이미지">
+                    <img class=zzan src="./img/sub_banner_bg.png" alt="">
+                </div>
+            </div><!-- //.container -->
+        </div><!-- //#banner -->
+
+
+
+        <!-- #team_desc -->
+        <div id="team_desc">
+            <div class="container">
+                <div class="team_desc">
+                    <div class="t_desc">
+                        <p>
+                            안녕하세요! 웹퍼블리셔팀 <strong>2^10</strong> 입니다. <br>
+                            팀원들 사이의 나이 차이와 키 차이에서 착안하여 팀명을 지었으며, <br>
+                            웹디자인과 웹페이지 개발을 열정적으로 수행하고 있습니다.
+                        </p>
+                        <p>
+                            우리 팀은 항상 창의적이고 혁신적인 아이디어로 최고의 결과물을 만들어냅니다. <br>
+                            함께 웹의 무한한 가능성을 탐험해보세요!
+                        </p>
+                    </div>
+                </div>
+            </div><!-- //.container -->
+        </div><!-- //#team_desc -->
+
+
+
+        <div id="cont_banner"></div>
+
+        <div id="contents">
+            <div id="cont1">
+                <div class="container">
+                    <div class="cont1">
+                        <div class="btn">
+                            <button id="button_height">키순</button>
+                            <button id="button_age">나이순</button>
+                        </div>
+                        <div class="image-container">
+                            <img class="s_pjh movable" src="./img/s_pjh.png" alt="스탠드_진형이미지">
+                            <img class=movable src="./img/s_kdk.png" alt="스탠드_도경이미지">
+                            <img class=movable src="./img/s_kye.png" alt="스탠드_영은이미지">
+                            <img class=movable src="./img/s_hms.png" alt="스탠드_민서이미지">
+                        </div>
+                    </div><!-- //.cont1 -->
+                </div><!-- //.container -->
+            </div><!-- //#cont1 -->
+        </div>
+
+            <div id="cont2">
+
+                <div id="kye">
+                    <div class="container">
+                        <div class="profile kye">
+                            <div class="p_img"><img src="./img/p_kye.png" alt="프로필사진_공영은"></div>
+                            <div class="p_layer clearfix">
+                                <div class="prf">
+                                    <div class="title">
+                                        <em> 새로운 도전을 즐기는 <strong>공영은</strong></em>
+                                    </div>
+                                    <div class="info">
+                                        <p>나이 : 28세</p>
+                                        <p>키 : 164cm</p>
+                                        <p>MBTI : ESTP</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            밝고 유쾌한 성격을 가진 2^10의 맏이.
+                                            운동을 좋아해서 활동적인 취미를 즐기며, 특히 달리기와 요가를 좋아합니다.
+                                            항상 새로운 도전을 시도하며, 여행과 기록에도 큰 관심을 가지고 있습니다.
+                                            끊임없이 성장하고 발전하기 위해 노력하는 열정적인 사람입니다.
+                                        </p>
+                                    </div>
+                                    <div class="tag clearfix">
+                                        <p>#열정</p>
+                                        <p>#갓생러</p>
+                                        <p>#OOTD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.container -->
+                </div><!-- //#kye -->
+
+                <div id="pjh">
+                    <div class="container">
+                        <div class="profile pjh">
+                            <div class="p_img"><img src="./img/p_pjh.png" alt="프로필사진_박진형"></div>
+                            <div class="p_layer clearfix">
+                                <div class="prf">
+                                    <div class="title">
+                                        <em> 긍정적인 에너자이저 <strong>박진형</strong></em>
+                                    </div>
+                                    <div class="info">
+                                        <p>나이 : 26세</p>
+                                        <p>키 : 184cm</p>
+                                        <p>MBTI : ENFP</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            2^10의 분위기 메이커.
+                                            항상 즐거움을 추구하며 다양한 경험을 사랑합니다.
+                                            명상과 성찰을 통해 스스로를 이해하려고 노력합니다. 다양한 사람들과의 교류와 긍정적인 에너지를 나누는 것을 좋아합니다.
+                                        </p>
+                                    </div>
+                                    <div class="tag clearfix">
+                                        <p>#노력</p>
+                                        <p>#N잡러</p>
+                                        <p>#다재다능</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.container -->
+                </div><!-- //#pjh -->
+
+                <div id="hms">
+                    <div class="container">
+                        <div class="profile hms">
+                            <div class="p_img"><img src="./img/p_hms.png" alt="프로필사진_허민서"></div>
+                            <div class="p_layer clearfix">
+                                <div class="prf">
+                                    <div class="title">
+                                        <em>온화하고 창의적인 <strong>허민서</strong></em>
+                                    </div>
+                                    <div class="info">
+                                        <p>나이 : 24세</p>
+                                        <p>키 : 154cm</p>
+                                        <p>MBTI : INFP</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            온화하고 명쾌한 성격을 가진 2^10 멤버.
+                                            처음에는 내성적으로 보일 수 있지만, 사실은 밝고 명랑한 성격입니다.
+                                            집에서 여유로이 보낼 수 있는 시간을 좋아하며,
+                                            창의적인 일이라면 열과성을 다할 수 있는 사람입니다.
+                                        </p>
+                                    </div>
+                                    <div class="tag clearfix">
+                                        <p>#완벽주의</p>
+                                        <p>#창의적인</p>
+                                        <p>#착함</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.container -->
+                </div><!-- //#hms -->
+
+                <div id="kdk">
+                    <div class="container">
+                        <div class="profile kdk">
+                            <div class="p_img"><img src="./img/p_kdk.png" alt="프로필사진_김도경"></div>
+                            <div class="p_layer clearfix">
+                                <div class="prf">
+                                    <div class="title">
+                                        <em> 책임감 있는 아이디어 뱅크 <strong>김도경</strong></em>
+                                    </div>
+                                    <div class="info">
+                                        <p>나이 : 22세</p>
+                                        <p>키 : 174cm</p>
+                                        <p>MBTI : ENTP</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            2^10의 책임감 있는 팀장이자 2^10의 막내.
+                                            책임감 있고 창의적인 성격으로 아이디어를 생각해내는 것을 좋아합니다.
+                                            사려 깊고 현실적인 성향이라 주변 사람들에게 조언을 자주합니다.
+                                            사람들을 잘 챙기고, 호기심이 많아 지식과 경험을 쌓는 것을 즐깁니다.
+                                        </p>
+                                    </div>
+                                    <div class="tag clearfix">
+                                        <p>#팀장</p>
+                                        <p>#창의적인</p>
+                                        <p>#책임감</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- //.container -->
+                </div><!-- //#kdk -->
+
+            </div><!-- //#cont2 -->
+
+        <!-- footer -->
+        <div id="footer" class="scr1">
+            <div class="container">
+                <div class="footer">
+                    <div class="f_text clearfix">
+                        <ul>
+                            <li><a href="javascript:;">정보</a>
+                                <ul>
+                                    <li>사업자 등록번호 : 777-77-7777</li>
+                                    <li>서울특별시 강서구 화곡로149 3층~5층
+                                        <br>(화곡동.심당빌딩)
+                                    </li>
+                                    <li>Scoops0318@gmali.com</li>
+                                    <li>김도경, 공영은, 박진형, 허민서</li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">고객센터</a>
+                                <ul>
+                                    <li>070-1234-5678</li>
+                                    <li>평일: 09:00 ~ 18:00</li>
+                                    <li>주말: 12:00 ~ 14:00</li>
+                                    <li>공휴일은 고객센터를 운영하지 않습니다.</li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">STORE</a>
+                                <ul>
+                                    <li><a href="javascript">매장찾기</a></li>
+                                    <li><a href="javascript">배달주문</a></li>
+                                    <li><a href="javascript">단체주문</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">SNS</a>
+                                <ul>
+                                    <li><a href="javascript">YouTube</a></li>
+                                    <li><a href="javascript">Instagram</a></li>
+                                    <li><a href="javascript">KakaoTalk</a></li>
+                                    <li><a href="javascript">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f_copy">
+                        <a href="javascript:;">개인정보 보호정책</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">서비스 이용약관</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">쿠키 정책</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">면책 조항</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">저작권 정보</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">접근성 설명서</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">GDPR 준수</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">CCPA 준수</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">사용자 동의</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">최종 사용자 사용권 계약</a>
+                        <a href="javascript:;"> | </a>
+                        <a href="javascript:;">환불 정책</a>
+                        <span>© 2024 Scoops. All rights reserved.</span>
+                    </div>
+                    <div class="f_logo">
+                        <ul class="first">
+                            <li><a href="javascript:;">채용문의</a></li>
+                            <li><a href="javascript:;">ㅣ</a></li>
+                            <li><a href="javascript:;">점포개설문의</a></li>
+                        </ul>
+                        <img src="./img/f_logo.png" alt="푸터로고이미지" class="second">
+                        <div class="family">
+                            <select onchange="window.open(value,'_blank')">
+                                <option value="#" selected="selected">family site</option>
+                                <option value="http://daiiny.dothome.co.kr/port1/">Young Flower_공영은</option>
+                                <option value="http://ddkk78.dothome.co.kr/port1/">돈벌자_박진형</option>
+                                <option value="http://mmzz6.dothome.co.kr/port1/">지비랑_허민서</option>
+                                <option value="http://mieum0915.dothome.co.kr/port1/">GoToMoment_김도경</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- //.footer -->
+            </div><!-- //.container -->
+        </div><!-- //#footer -->
+
+
+
+    </div>
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script>
+
+
+
+        // 플로팅 메뉴, 햄버거메뉴
+        const Nav = $(".nav_item>ul>li")
+        const cont = $(".scr1")
+
+        Nav.click(function (e) {
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            let section = cont.eq(index);
+            let offset = section.offset().top;
+            $("html,body").animate({ scrollTop: offset }, 1000);
+        });
+        $(window).scroll(function () {
+            let wScroll = $(this).scrollTop();
+            console.log(wScroll)
+
+            // console.log(wScroll)
+            if (wScroll >= cont.eq(0).offset().top) {
+            }
+            if (wScroll >= cont.eq(1).offset().top) {
+            }
+        });
+
+
+
+
+        // banner 폭죽 이벤트
+        var count = 200;
+        var defaults = {
+        origin: { y: 0.5 }
+        };
+
+        function fire(particleRatio, opts) {
+        confetti({
+            ...defaults,
+            ...opts,
+            particleCount: Math.floor(count * particleRatio)
+        });
+        }
+
+        fire(0.25, {
+        spread: 26,
+        startVelocity: 55,
+        });
+        fire(0.2, {
+        spread: 60,
+        });
+        fire(0.35, {
+        spread: 100,
+        decay: 0.91,
+        scalar: 0.8
+        });
+        fire(0.1, {
+        spread: 120,
+        startVelocity: 25,
+        decay: 0.92,
+        scalar: 1.2
+        });
+        fire(0.1, {
+        spread: 120,
+        startVelocity: 45,
+        });
+
+
+
+        // cont1 키순/나이순 정렬 스크립트
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.movable');
+            const positions = [
+
+            // 31>44>57>70 (13%)
+            // 20>40>60>80 (20%)
+
+                // 진형
+                {
+                    // 시작위치
+                    startTop: 50,
+                    startLeft: 20,
+
+                    // 키순 지정위치
+                    targetTop1: 50,
+                    targetLeft1: 20,
+
+                    // 나이순 지정위치
+                    targetTop2: 50,
+                    targetLeft2: 40
+                },
+
+                // 도경
+                {
+                    // 시작위치
+                    startTop: 50,
+                    startLeft: 40,
+
+                    // 키순 지정위치
+                    targetTop1: 50,
+                    targetLeft1: 40,
+
+                    // 나이순 지정위치
+                    targetTop2: 50,
+                    targetLeft2: 80
+                },
+
+                // 영은
+                {
+                    // 시작위치
+                    startTop: 50,
+                    startLeft: 60,
+
+                    // 키순 지정위치
+                    targetTop1: 50,
+                    targetLeft1: 60,
+
+                    // 나이순 지정위치
+                    targetTop2: 50,
+                    targetLeft2: 20
+                },
+
+                // 민서
+                {
+                    // 시작위치
+                    startTop: 50,
+                    startLeft: 80,
+
+                    // 키순 지정위치
+                    targetTop1: 50,
+                    targetLeft1: 80,
+
+                    // 나이순 지정위치
+                    targetTop2: 50,
+                    targetLeft2: 60
+                },
+            ];
+
+            const duration = 100; // 속도
+
+            // 이미지 현재 위치를 저장하는 스크립트
+            images.forEach((img, index) => {
+                const { startTop, startLeft } = positions[index];
+                img.style.top = `${startTop}%`;
+                img.style.left = `${startLeft}%`;
+                img.dataset.currentTop = startTop;
+                img.dataset.currentLeft = startLeft;
+            });
+
+            function moveImages(targets) {
+                images.forEach((img, index) => {
+                    const startTop = parseFloat(img.dataset.currentTop);
+                    const startLeft = parseFloat(img.dataset.currentLeft);
+                    const { targetTop, targetLeft } = targets[index];
+
+                    const startTime = performance.now();
+
+                    function animate(time) {
+                        const elapsedTime = time - startTime;
+                        const progress = Math.min(elapsedTime / duration, 1);
+
+                        const currentTop = startTop + (targetTop - startTop) * progress;
+                        const currentLeft = startLeft + (targetLeft - startLeft) * progress;
+
+                        img.style.top = currentTop + '%';
+                        img.style.left = currentLeft + '%';
+
+                        if (progress < 1) {
+                            requestAnimationFrame(animate);
+                        } else {
+                            img.dataset.currentTop = currentTop;
+                            img.dataset.currentLeft = currentLeft;
+                        }
+                    }
+
+                    requestAnimationFrame(animate);
+                });
+            }
+
+            // 키순 버튼
+            document.getElementById('button_height').addEventListener('click', function () {
+                const targets = positions.map(pos => ({ 
+                    targetTop: pos.targetTop1, 
+                    targetLeft: pos.targetLeft1 
+                }));
+                moveImages(targets);
+            });
+
+            // 나이순 버튼
+            document.getElementById('button_age').addEventListener('click', function () {
+                const targets = positions.map(pos => ({ 
+                    targetTop: pos.targetTop2, 
+                    targetLeft: pos.targetLeft2 
+                }));
+                moveImages(targets);
+            });
+        });
+    </script>
+</body>
+</html>
